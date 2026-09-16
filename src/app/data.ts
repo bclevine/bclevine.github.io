@@ -59,8 +59,6 @@ export const researchAreas: readonly ResearchArea[] = [
 ];
 
 export const majorPublications: readonly Publication[] = [
-  { id: "rubin-view-a360", year: "2026", title: "A Rubin View of A360", authors: "A. von der Linden, ..., B. Levine, et al.", venue: "In prep." },
-  { id: "lens-ellipticity-bias", year: "2026", title: "Lens Ellipticity Bias in the DES Y3 redMaGiC Sample", authors: "B. Levine, et al.", venue: "In prep." },
   { id: "lsst-blending", year: "2025", title: "Galaxy Clustering with LSST: Effects of Number Count Bias from Blending", authors: "B. Levine, et al.", venue: "OJA, 8", url: "https://astro.theoj.org/article/136427-galaxy-clustering-with-lsst-effects-of-number-count-bias-from-blending" },
   { id: "bachelors-thesis", year: "2022", title: "Brightest Cluster Galaxies in Strongly-Lensing Galaxy Clusters and Richness- and Redshift-Matched Samples", authors: "B. Levine", venue: "Bachelor's Thesis, The University of Chicago", url: "https://knowledge.uchicago.edu/record/4947?ln=en" },
 ];
