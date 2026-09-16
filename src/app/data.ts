@@ -53,7 +53,7 @@ export interface OutreachEntry {
 
 export const researchAreas: readonly ResearchArea[] = [
   { id: "blending", title: "Galaxy Blending", description: ["Blending occurs when two or more objects overlap on the sky. For deep, ground-based photometric surveys, over half of the detected sources are expected to exhibit some degree of blending. I authored a paper showing that blending does not significantly impact LSST-like galaxy clustering cosmology analyses, although it may generate biases on nonlinear scales."] },
-  { id: "halo-triaxiality", title: "Dark Matter Halo Triaxiality", description: ["Dark matter halos are typically treated as spherical in analytical modeling for cosmology experiments, but they are actually triaxial spheroids, and the orientation of these spheroids affects the measured weak lensing signal. I authored a paper showing that selecting round or elliptical lens galaxies — which is likely to be a proxy for the orientation of their host halos — generates a large bias in the galaxy-galaxy lensing signal. This bias propagates into a 2–3σ bias in cosmological and HOD parameters."] },
+  { id: "halo-triaxiality", title: "Dark Matter Halo Triaxiality", description: ["Dark matter halos are typically treated as spherical in analytical modeling for cosmology experiments, but they are actually triaxial spheroids, and the orientation of these spheroids affects the measured weak lensing signal. I am in the final stages of a project exploring how selecting round or elliptical lens galaxies — which is likely to be a proxy for the orientation of their host halos — can affect the measured galaxy-galaxy lensing signal."] },
   { id: "hod-modeling", title: "HOD Modeling for LSST", description: ["I am involved in creating the modeling pipeline for the LSST DESC DP2 galaxy-galaxy lensing key project. Alongside my collaborators, I am developing software to efficiently model the small-scale tangential shear signal for arbitrary halo occupation frameworks, and to forecast optimal analysis choices for DP2 science."] },
   { id: "cirrus", title: "Galactic Cirrus", description: ["Galactic cirrus can be a significant source of contamination in extragalactic surveys. For LSST, we will need fast, automated, and targeted methods to mask regions with heavy cirrus contamination. I am developing a new algorithm to detect cirrus directly from optical images, to be used in LSST cosmology analyses."] },
 ];
@@ -93,7 +93,7 @@ export const outreachEntries: readonly OutreachEntry[] = [
   { id: "custer-observatory", year: "2023–26", title: "Custer Institute and Observatory", description: "Volunteer educator at local public observatory on Long Island." },
 ];
 export const educationEntries: readonly EducationEntry[] = [
-  { id: "sbu-phd", year: "2027, exp.", degree: "Ph.D., Physics & Astronomy", institution: "Stony Brook University", advisor: "Anja von der Linden", note: "Dissertation: Ablabla" },
+  { id: "sbu-phd", year: "2027, exp.", degree: "Ph.D., Physics & Astronomy", institution: "Stony Brook University", advisor: "Anja von der Linden"},
   { id: "uchicago-bs", year: "2022", degree: "B.S., Astronomy & Astrophysics", institution: "The University of Chicago", advisor: "Michael D. Gladders", note: "Honors Thesis: Brightest Cluster Galaxies in Strongly-Lensing Galaxy Clusters and Richness- and Redshift-Matched Samples" },
 ];
 export const awardEntries: readonly AwardEntry[] = [
