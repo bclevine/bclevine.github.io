@@ -5,11 +5,3 @@ allowBuilds:
   esbuild: true
 nodeLinker: hoisted
 confirmModulesPurge: false
-supportedArchitectures:
-  os:
-    - darwin
-  cpu:
-    - x64
-    - arm64
-  libc:
-    - glibc
