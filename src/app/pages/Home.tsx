@@ -22,7 +22,15 @@ export default function Home() {
       <div className="mt-6"><SocialLinks iconOnly /></div>
       {/* <nav className="mt-6 border-t border-border pt-5" aria-label="Page sections"><ul className="flex flex-wrap justify-center gap-x-4 gap-y-3">{[["about", "About"], ["research", "Research"], ["publications", "Publications"], ["teaching", "Teaching"], ["outreach", "Outreach"], ["cv", "CV"]].map(([id, label]) => <li key={id}><a href={`#${id}`} className="text-[12px] text-muted-foreground transition-colors hover:text-foreground">{label}</a></li>)}</ul></nav> */}
       </header>
-    <section id="about"><SectionLabel>About</SectionLabel><div className="space-y-4"><p className="text-[15px] leading-[1.8] text-foreground">Hello! I am a Ph.D. Candidate in the Department of Physics and Astronomy at Stony Brook University.</p><p className="text-[15px] leading-[1.8] text-foreground">My research focuses on measuring and mitigating systematic effects in probes of the large-scale structure of the universe. I am heavily involved in the LSST Dark Energy Science Collaboration.</p><p className="text-[15px] leading-[1.8] text-foreground">I also enjoy outreach and mid-level scientific education.</p></div></section>
+    <section id="about"><SectionLabel>About</SectionLabel><div className="space-y-4">
+      <p className="text-[15px] leading-[1.8] text-foreground">Hello! I am a Ph.D. Candidate in the Department of Physics and Astronomy at Stony Brook University.</p>
+      <p className="text-[15px] leading-[1.8] text-foreground">My research focuses on measuring and mitigating systematic effects in probes of the large-scale structure of the universe. 
+        Overcoming these systematics is key to enabling precision observational cosmology experiments.
+        I am heavily involved in the LSST Dark Energy Science Collaboration and its ongoing efforts to measure cosmology from the Vera Rubin Observatory's 10-year survey.</p>
+      <p className="text-[15px] leading-[1.8] text-foreground">I'm also very interested in scientific outreach and education. 
+        I particularly enjoy education at the high school and undergraduate level, 
+        in which I can introduce technical skills on top of students' pre-existing conceptual knowledge.</p></div>
+    </section>
     <section id="research"><SectionLabel>Research</SectionLabel><div className="space-y-8">{researchAreas.map((area) => <div key={area.id}><Link to={`/research#${area.id}`} className="text-[14px] font-medium text-foreground underline decoration-border underline-offset-4 hover:text-muted-foreground">{area.title}</Link><p className="mt-1.5 text-[14px] leading-[1.8] text-muted-foreground">{area.description[0]}</p></div>)}</div></section>
     <section id="publications"><SectionLabel>Publications &amp; Manuscripts</SectionLabel><div className="space-y-8"><PublicationList title="First Author & Major Contributions" publications={majorPublications} /><PublicationList title="Contributing Author" publications={contributingPublications} /></div></section>
     <section id="teaching"><SectionLabel>Teaching</SectionLabel><TeachingGroups groups={teachingGroups} /></section>
